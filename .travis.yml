@@ -16,7 +16,7 @@ before_deploy:
 deploy:
   provider: releases
   api_key:
-    secure: "T+ISAhBBXiRGSaLnUx2YXVO/DVYWN62EEiMU1rEzP+mJ2dh/GQfyNzZUJtIcaR0r++CcimZ6wc15+Ct4gJo7jOqQDEYonruuwAL3fD8RKv3Je4JlI2vxR5xu8KpKHpu6s246B5YzAVqWyi13PWQercOepkgXXYZaUelhacLn86XRkjAXR9NFxWb1TPtMLp+gdrYE5pmhhDh0r7IRnM5zmW5zhYL8N8byaDsKd90B1gjHkZhInC0Rw8iHTHiWcrPUZFhV4q5VLnFHI/OISqDfa28M6NyM5k/21Qc0dKdwDFi2X8wz2+iUcRKlYcnPoimBJtmIMdyGOBdshwU1Efn/Rztr0OMRc9gAjB4fcFzE1JyjP//8X8gCLWuSOshIS0oixht4vMLFYD42bBXRQm02lKF5mTMeLvD76fhmME6vKU6AL58vMceKOqdpRSAD0CxRogZ6CfVA86XOgKFGpMIbA+rivMV8DBvBpd15d8J4nFGbt4OTbr74Kr32gN9yKo9CjdezVO50QC3mBhSMo8ckD33OHbetoq075sHynFuxA4h/ALhfMl3cVchYXapUGpO9QAWXeqoqr8c75yAW+B9JI1lLGRwLb5I3FTRw4P0FsHOanQ0ltApEZHTvtE6YldQ57W99SAck/3LtpjpiuB0iIW/Std7UKHgS5/QPx3CxlEo="
+    secure: E0ih9UbnXzBWpjk5/+6Qp+79Szwhaklq7ytKILjTwviItWEEkKTbMCaB5QdfG4bd2sJs18sxuDwHoMT+21oX2+P9vBE4dWiYhFgpqFlOEz3CKRq2hS7v84Gf2NVMLxfUVzn1TXOYq1fDbmnRCmy8kk7PWwQRTQgSLbaZ708Gx6R9XyD2y0FXhWO9NwCrrJ/RO+aDQ/g9tTSXNQ7ncwVHess/OgtOJiCEJ2LXYzYUGJSUHlMVVVER4tX/apz4DK57SLtvz+3OvtuxsMG/xSjKkOYG6GHbzBGGellPqxhv9OWYw5vpSTPl9jpm/CAB5dUqgKFFeykh2Z40bB7sTl+zlf4Jpg6zrmEINXZPT9cc5HclPeTc6QeUyjnYLJUHO7VKUDeyv1rZ/cm1bdG9s4judHHaQk0AoyjWGwADVT/ip4JRLnJznNN7z0HT+i6zCeZ2scEY+tXVzcLXuNt1ZuqQkD2TnFv1mBTRJE76eSGYJY9WKs8aaiSZHUcOAFAdBdGOgpH5W0YN0gTeFBwD2NnlpH/pebxrQby5vyUEd8f4r43RR84Cu3iUEIPF6+HSIfuyEcjgISLk8aABZ6rMWE/n0hVoLAK4mu8CkL2WaDz+GM3byKOjLeztX4g+5wkOCPVZb7WT+/Ur09uY7nlYnthDlwZJY2je5CGaI0oOMAcxRYw=
   file_glob: true
   file:
     - "**/target/*.jar"
@@ -26,3 +26,4 @@ deploy:
   on:
     tags: true
     jdk: oraclejdk8
+    repo: Graylog2/graylog-plugin-internal-logs
