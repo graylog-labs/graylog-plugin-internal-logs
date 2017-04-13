@@ -60,7 +60,7 @@ public class InternalLogsInput extends MessageInput {
 
     public static class Descriptor extends MessageInput.Descriptor {
         public Descriptor() {
-            super(NAME, false, "");
+            super(NAME, true, "");
         }
     }
 
