@@ -82,7 +82,7 @@ public class DirectConsumingAppenderTest {
         assertThat(appender.getFilter()).isInstanceOf(ThresholdFilter.class);
     }
 
-    private final class TestConsumer implements Consumer<byte[]> {
+    private static final class TestConsumer implements Consumer<byte[]> {
         private final List<byte[]> processedLogEvents = new ArrayList<>();
 
         @Override

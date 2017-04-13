@@ -134,9 +134,7 @@ public class SerializedLogEventCodec extends AbstractCodec {
         }
 
         if (includeThreadContext) {
-            for (Map.Entry<String, String> entry : logEvent.getContextMap().entrySet()) {
-                message.addField("context_" + entry.getKey(), entry.getValue());
-            }
+            logEvent.getContextData().forEach((k, v ) -> message.addField("context_" + k, v));
 
             // Guard against https://issues.apache.org/jira/browse/LOG4J2-1530
             final ThreadContext.ContextStack contextStack = logEvent.getContextStack();
