@@ -26,4 +26,4 @@ deploy:
   on:
     tags: true
     jdk: oraclejdk8
-    repo: Graylog2/graylog-plugin-internal-logs
+    repo: graylog-labs/graylog-plugin-internal-logs

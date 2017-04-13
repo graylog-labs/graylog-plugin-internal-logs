@@ -24,9 +24,9 @@
     </organization>
 
     <scm>
-        <connection>scm:git:git@github.com:Graylog2/graylog-plugin-internal-logs.git</connection>
-        <developerConnection>scm:git:git@github.com:Graylog2/graylog-plugin-internal-logs.git</developerConnection>
-        <url>https://github.com/Graylog2/graylog-plugin-internal-logs</url>
+        <connection>scm:git:git@github.com:graylog-labs/graylog-plugin-internal-logs.git</connection>
+        <developerConnection>scm:git:git@github.com:graylog-labs/graylog-plugin-internal-logs.git</developerConnection>
+        <url>https://github.com/graylog-labs/graylog-plugin-internal-logs</url>
         <tag>HEAD</tag>
     </scm>
 

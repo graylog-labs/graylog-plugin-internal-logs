@@ -1,8 +1,10 @@
 # Internal Logs Input Plugin for Graylog
 
-[![Build Status](https://travis-ci.org/Graylog2/graylog-plugin-internal-logs.svg?branch=master)](https://travis-ci.org/Graylog2/graylog-plugin-internal-logs)
+[![Github Downloads](https://img.shields.io/github/downloads/graylog-labs/graylog-plugin-internal-logs/total.svg)](https://github.com/graylog-labs/graylog-plugin-internal-logs/releases)
+[![GitHub Release](https://img.shields.io/github/release/graylog-labs/graylog-plugin-internal-logs.svg)](https://github.com/graylog-labs/graylog-plugin-internal-logs/releases)
+[![Build Status](https://travis-ci.org/graylog-labs/graylog-plugin-internal-logs.svg?branch=master)](https://travis-ci.org/graylog-labs/graylog-plugin-internal-logs)
 
-**Required Graylog version:** 2.1.0 and later
+**Required Graylog version:** 2.2.0 and later
 
 This plugin provides an input for recording Graylog's internal log messages in Graylog itself in an efficient way.
 
@@ -14,7 +16,7 @@ Since this input is only started after Graylog has been initialized, it will cur
 
 ## Installation
 
-[Download the plugin](https://github.com/Graylog2/graylog-plugin-internal-logs/releases) and place the JAR file in your Graylog plugin directory.
+[Download the plugin](https://github.com/graylog-labs/graylog-plugin-internal-logs/releases) and place the JAR file in your Graylog plugin directory.
 By default the plugin directory is the `plugins/` directory relative to your Graylog installation directory and can be configured in your `graylog.conf` file.
 
 Restart Graylog and you are done.
@@ -45,7 +47,7 @@ Travis CI will build the release artifacts and upload to GitHub automatically.
 
 ## License
 
-Copyright (c) 2016 Graylog, Inc.
+Copyright (c) 2016-2017 Graylog, Inc.
 
 This library is licensed under the GNU General Public License, Version 3.0.
 
