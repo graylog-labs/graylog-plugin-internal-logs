@@ -26,6 +26,8 @@ import org.apache.logging.log4j.core.impl.MutableLogEvent;
 import org.apache.logging.log4j.core.net.Severity;
 import org.apache.logging.log4j.message.SimpleMessage;
 import org.apache.logging.log4j.spi.MutableThreadContextStack;
+import org.apache.logging.log4j.util.SortedArrayStringMap;
+import org.apache.logging.log4j.util.StringMap;
 import org.graylog2.cluster.Node;
 import org.graylog2.cluster.NodeService;
 import org.graylog2.plugin.Message;
@@ -166,7 +168,9 @@ public class SerializedLogEventCodecTest {
         logEvent.setNanoTime(42L);
 
         logEvent.setContextStack(new MutableThreadContextStack(ImmutableList.of("one", "two")));
-        logEvent.setContextMap(Collections.singletonMap("foobar", "quux"));
+        final SortedArrayStringMap contextData = new SortedArrayStringMap(1);
+        contextData.putValue("foobar", "quux");
+        logEvent.setContextData(contextData);
 
         logEvent.setThreadId(23L);
         logEvent.setThreadName("thread-name");

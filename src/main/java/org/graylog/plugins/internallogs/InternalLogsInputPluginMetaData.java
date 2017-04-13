@@ -26,6 +26,8 @@ import java.util.Collections;
 import java.util.Set;
 
 public class InternalLogsInputPluginMetaData implements PluginMetaData {
+    private static final String PLUGIN_PROPERTIES = "org.graylog.plugins.graylog-plugin-internal-logs/graylog-plugin.properties";
+
     @Override
     public String getUniqueId() {
         return InternalLogsInputPlugin.class.getCanonicalName();
@@ -48,7 +50,7 @@ public class InternalLogsInputPluginMetaData implements PluginMetaData {
 
     @Override
     public Version getVersion() {
-        return Version.from(1, 0, 0);
+        return Version.fromPluginProperties(getClass(), PLUGIN_PROPERTIES, "version", Version.from(1, 0, 0));
     }
 
     @Override
@@ -58,7 +60,7 @@ public class InternalLogsInputPluginMetaData implements PluginMetaData {
 
     @Override
     public Version getRequiredVersion() {
-        return Version.from(2, 0, 0);
+        return Version.fromPluginProperties(getClass(), PLUGIN_PROPERTIES, "graylog.version", Version.from(2, 2, 0));
     }
 
     @Override
