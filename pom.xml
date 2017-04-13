@@ -9,7 +9,7 @@
     </parent>
 
     <artifactId>graylog-plugin-internal-logs</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>${project.artifactId}</name>
@@ -26,7 +26,7 @@
         <connection>scm:git:git@github.com:graylog-labs/graylog-plugin-internal-logs.git</connection>
         <developerConnection>scm:git:git@github.com:graylog-labs/graylog-plugin-internal-logs.git</developerConnection>
         <url>https://github.com/graylog-labs/graylog-plugin-internal-logs</url>
-        <tag>1.0.0</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <properties>
