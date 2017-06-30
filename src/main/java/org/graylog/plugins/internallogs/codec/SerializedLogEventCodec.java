@@ -160,9 +160,9 @@ public class SerializedLogEventCodec extends AbstractCodec {
         if (includeStackTrace && throwableProxy != null) {
             final String stackTrace;
             if (includeExceptionCause) {
-                stackTrace = throwableProxy.getExtendedStackTraceAsString();
+                stackTrace = throwableProxy.getExtendedStackTraceAsString("");
             } else {
-                stackTrace = throwableProxy.getCauseStackTraceAsString();
+                stackTrace = throwableProxy.getCauseStackTraceAsString("");
             }
 
             message.addField("exception_class", throwableProxy.getName());
