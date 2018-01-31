@@ -4,8 +4,6 @@
 [![GitHub Release](https://img.shields.io/github/release/graylog-labs/graylog-plugin-internal-logs.svg)](https://github.com/graylog-labs/graylog-plugin-internal-logs/releases)
 [![Build Status](https://travis-ci.org/graylog-labs/graylog-plugin-internal-logs.svg?branch=master)](https://travis-ci.org/graylog-labs/graylog-plugin-internal-logs)
 
-**Required Graylog version:** 2.3.0 and later
-
 This plugin provides an input for recording Graylog's internal log messages in Graylog itself in an efficient way.
 
 
@@ -47,7 +45,7 @@ Travis CI will build the release artifacts and upload to GitHub automatically.
 
 ## License
 
-Copyright (c) 2016-2017 Graylog, Inc.
+Copyright (c) 2016-2018 Graylog, Inc.
 
 This library is licensed under the GNU General Public License, Version 3.0.
 
